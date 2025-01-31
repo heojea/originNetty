@@ -37,6 +37,8 @@ public class Util {
     }
 
     public static void writeByteArr(FileChannel writeFileChannel, ByteBuffer buf ,  byte[] byteArr , boolean consoleBoolean) throws IOException {
+
+        if (consoleBoolean) { console("writeByteString: "+new String(byteArr, StandardCharsets.UTF_8)); }
         writeFileChannel.write(ByteBuffer.wrap(byteArr));
 //        writeFileChannel.close();
     }
@@ -51,7 +53,7 @@ public class Util {
             buf.flip().get(tmpByte);
             buf.clear();
             tmpString = new String(tmpByte, StandardCharsets.UTF_8);
-            if (consoleBoolean) { console(tmpString); }
+            if (consoleBoolean) { console("readByteString: "+tmpString); }
 
         } catch(BufferUnderflowException bfe) {
             console(bfe);
