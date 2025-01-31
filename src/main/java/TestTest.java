@@ -34,28 +34,20 @@ public class TestTest
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
-
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-        util.getByteArr(readFileChannel,buf, true);
-
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
+        util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, true) ,true);
         util.fileChannelClose(readFileChannel);
         util.fileChannelClose(writeFileChannel);
     }
