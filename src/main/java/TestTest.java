@@ -27,7 +27,7 @@ public class TestTest
         ByteBuffer buf = ByteBuffer.allocateDirect(readLength);
 
         FileChannel readFileChannel  = FileChannel.open(Paths.get(filePath), StandardOpenOption.READ);
-        FileChannel writeFileChannel = FileChannel.open(receviceFile, StandardOpenOption.WRITE);
+        FileChannel writeFileChannel = FileChannel.open(receviceFile       , StandardOpenOption.WRITE);
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, readObjectConsoleBoolean) ,writeObjectConsoleBoolean);
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, readObjectConsoleBoolean) ,writeObjectConsoleBoolean);
         util.writeByteArr(writeFileChannel,buf, util.getByteArr(readFileChannel,buf, readObjectConsoleBoolean) ,writeObjectConsoleBoolean);

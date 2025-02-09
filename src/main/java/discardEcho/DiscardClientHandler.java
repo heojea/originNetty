@@ -29,8 +29,6 @@ public class DiscardClientHandler extends ChannelInboundHandlerAdapter {
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) {
-        System.out.println("iscardClientHandler  channelActive ");
-        System.out.println(firstMessage);
         ctx.writeAndFlush(firstMessage);
     }
 
